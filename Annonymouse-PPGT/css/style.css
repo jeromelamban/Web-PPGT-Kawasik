@@ -1,0 +1,399 @@
+:root {
+  --primary: #7283cf;
+  --bg: #fafafc;
+  --text-color: #fdfdfd;
+  --navbar-bg: rgba(21, 21, 22, 0.8);
+  --text-dark: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #11815a;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid #312b4b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: var(--text-color);
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #eddfdf;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7283cf, #11815a),
+    url("path_to_your_image.jpg"); /* Gantilah dengan path gambar yang benar */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero .content {
+  max-width: 600px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: #fafafc;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: white;
+  color: var(--primary);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Program Kerja PPGT Section */
+.program-kerja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7283cf, #11815a);
+  color: #fff;
+}
+
+.program-kerja .content {
+  max-width: 600px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.program-kerja h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.program-kerja p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.program-kerja .btn-primary {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.program-kerja .btn-primary:hover {
+  background-color: white;
+  color: var(--primary);
+}
+
+.program-kerja .image-container {
+  max-width: 600px;
+}
+
+.program-kerja .program-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Organisasi Section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #7283cf, #11815a);
+  color: #333;
+}
+
+/* Container Styling */
+.container {
+  padding: 4rem 7%;
+  text-align: center;
+}
+
+/* Section Header */
+.container h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #7283cf; /* Primary color */
+}
+
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #7283cf; /* Secondary color */
+}
+
+/* Organisasi Section */
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Profile Card */
+.profile {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.profile:hover {
+  transform: scale(1.05);
+}
+
+/* Profile Image */
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Profile Name */
+.profile h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Profile Role */
+.profile p {
+  font-size: 1.2rem;
+  color: #7283cf; /* Primary color */
+  margin-bottom: 1rem;
+}
+
+/* Instagram Button */
+.btn-instagram {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #e4405f; /* Instagram color */
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-instagram:hover {
+  background-color: #c13584;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 2.5rem;
+  }
+
+  .container h2 {
+    font-size: 1.8rem;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .profile img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1920px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background-color: #f9f9f9;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    left: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--text-dark);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scale(0.2);
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Footer Copyright Styling */
+footer {
+  background-color: var(--navbar-bg);
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Teks Dukung oleh Annonymousg19 */
+footer p strong {
+  color: #e4405f; /* Bisa disesuaikan dengan warna yang kamu inginkan */
+  font-weight: 700;
+}
+
+/* Hover Effect pada Teks Copyright */
+footer p:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* Media Query untuk responsif */
+@media (max-width: 768px) {
+  footer p {
+    font-size: 0.9rem;
+  }
+}
