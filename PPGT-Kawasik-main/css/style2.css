@@ -1,0 +1,105 @@
+/* Reset dasar untuk menghilangkan margin dan padding bawaan */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 5px;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+section ul li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+section ul li::before {
+  content: "•";
+  color: #4caf50;
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+footer p {
+  font-size: 1rem;
+}
+/* Footer */
+footer {
+  background-color: var(--navbar-bg);
+  padding: 1rem 0;
+  text-align: center;
+  color: #030000;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p strong {
+  color: #e4405f;
+  font-weight: 700;
+}
+
+footer p:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
